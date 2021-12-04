@@ -13,6 +13,11 @@ public class DemoApplication {
     public String welcome() {
         return "nguyen tien dong is coming";
     }
+
+    @GetMapping("/nguyentiendong")
+    public String home() {
+        return "nguyen tien dong dep trai";
+    }
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
